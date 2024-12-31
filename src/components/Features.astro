@@ -1,0 +1,57 @@
+---
+import CheckIcon from './icons/CheckIcon.astro';
+---
+
+<section class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center">
+        <h2 class="text-3xl font-bold text-gray-900 sm:text-4xl">
+        What You'll Learn
+        </h2>
+        <p class="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
+        Discover practical techniques and insights that will help you understand yourself better and improve your relationships.
+        </p>
+    </div>
+
+    <div class="mt-16 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+        {[
+        {
+            title: "Self-Discovery",
+            description: "Learn proven techniques for understanding your thoughts and emotions better."
+        },
+        {
+            title: "Relationship Skills",
+            description: "Develop stronger connections and improve communication with others."
+        },
+        {
+            title: "Stress Management",
+            description: "Master practical strategies to handle stress and anxiety effectively."
+        },
+        {
+            title: "Personal Growth",
+            description: "Set meaningful goals and create lasting positive changes in your life."
+        },
+        {
+            title: "Emotional Intelligence",
+            description: "Enhance your ability to understand and manage emotions."
+        },
+        {
+            title: "Mindfulness Practices",
+            description: "Learn techniques to stay present and reduce mental clutter."
+        }
+        ].map(feature => (
+        <div class="bg-primary-50 rounded-lg p-8">
+            <div class="flex items-center">
+            <CheckIcon class="h-6 w-6 text-primary-600" />
+            <h3 class="ml-3 text-xl font-semibold text-gray-900">
+                {feature.title}
+            </h3>
+            </div>
+            <p class="mt-4 text-gray-600">
+            {feature.description}
+            </p>
+        </div>
+        ))}
+    </div>
+    </div>
+</section>

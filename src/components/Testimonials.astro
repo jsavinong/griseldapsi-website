@@ -1,0 +1,41 @@
+---
+---
+
+<section class="py-24 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 class="text-3xl font-bold text-center text-gray-900 sm:text-4xl mb-16">
+    What Readers Are Saying
+    </h2>
+
+    <div class="grid gap-8 lg:grid-cols-3">
+    {[
+        {
+        quote: "This book transformed my understanding of myself and my relationships. Dr. Johnson's insights are invaluable.",
+        author: "Maria R.",
+        title: "Psychotherapy Client"
+        },
+        {
+        quote: "A must-read for anyone looking to improve their mental well-being. Clear, practical, and deeply insightful.",
+        author: "Dr. James Chen",
+        title: "Clinical Psychologist"
+        },
+        {
+        quote: "The exercises and techniques in this book have helped me manage stress and anxiety in ways I never thought possible.",
+        author: "Thomas W.",
+        title: "Business Executive"
+        }
+    ].map(testimonial => (
+        <blockquote class="bg-white rounded-lg shadow-lg p-8">
+        <svg class="h-8 w-8 text-primary-400 mb-4" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
+        </svg>
+        <p class="text-gray-600 mb-4">"{testimonial.quote}"</p>
+        <footer class="mt-4">
+            <p class="text-base font-semibold text-gray-900">{testimonial.author}</p>
+            <p class="text-sm text-gray-600">{testimonial.title}</p>
+        </footer>
+        </blockquote>
+    ))}
+    </div>
+</div>
+</section>
