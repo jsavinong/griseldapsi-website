@@ -1,0 +1,40 @@
+---
+import Button from '../ui/Button.astro';
+---
+
+<div class="bg-white p-8 rounded-lg shadow-md">
+    <h2 class="text-2xl font-bold text-gray-900 mb-6">Envía un Mensaje</h2>
+    <form class="space-y-6">
+        <div>
+            <label for="name" class="block text-sm font-medium text-gray-700">Nombre</label>
+            <input
+            type="text"
+            id="name"
+            name="name"
+            required
+            class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary-500 focus:ring-primary-500"
+            />
+        </div>
+        <div>
+            <label for="email" class="block text-sm font-medium text-gray-700">Correo Electrónico</label>
+            <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary-500 focus:ring-primary-500"
+            />
+        </div>
+        <div>
+            <label for="message" class="block text-sm font-medium text-gray-700">Mensaje</label>
+            <textarea
+            id="message"
+            name="message"
+            rows="4"
+            required
+            class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary-500 focus:ring-primary-500"
+            ></textarea>
+        </div>
+        <Button type="submit">Enviar Mensaje</Button>
+    </form>
+</div>

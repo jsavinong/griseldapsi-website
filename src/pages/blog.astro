@@ -1,0 +1,40 @@
+---
+import Layout from '../layouts/Layout.astro';
+import BlogPost from '../components/blog/BlogPost.astro';
+
+const posts = [
+    {
+        title: "Entendiendo la ansiedad en el mundo moderno",
+        excerpt: "Aprende sobre los desencadenantes comunes de la ansiedad y estrategias efectivas para afrontarla.",
+        date: "2024-02-15",
+        image: "https://images.unsplash.com/photo-1547561090-e2c1104d363f?w=800&h=400&q=80",
+        slug: "entendiendo-ansiedad"
+    },
+    {
+        title: "El poder de la práctica de la atención plena",
+        excerpt: "Descubre cómo la atención plena puede transformar tu vida diaria y mejorar tu bienestar mental.",
+        date: "2024-02-10",
+        image: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=800&h=400&q=80",
+        slug: "poder-atencion-plena"
+    },
+    {
+        title: "Construyendo resiliencia en tiempos desafiantes",
+        excerpt: "Estrategias prácticas para desarrollar resiliencia emocional y adaptabilidad.",
+        date: "2024-02-05",
+        image: "https://images.unsplash.com/photo-1520333789090-1afc82db536a?w=800&h=400&q=80",
+        slug: "construyendo-resiliencia"
+    }
+];
+
+    ---
+
+    <Layout title="Blog - Lic. Griselda García">
+    <section class="py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h1 class="text-4xl font-bold text-gray-900 mb-12">Últimos Artículos</h1>
+        <div class="grid gap-12 md:grid-cols-2 lg:grid-cols-3">
+        {posts.map(post => <BlogPost post={post} />)}
+        </div>
+    </div>
+    </section>
+</Layout>

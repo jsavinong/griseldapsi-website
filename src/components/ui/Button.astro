@@ -5,6 +5,7 @@ interface Props {
     class?: string;
     target?: string;
     rel?: string;
+    type?: 'submit' | 'reset' | 'button';
     }
 
     const { 
@@ -12,7 +13,8 @@ interface Props {
     variant = 'primary',
     class: className,
     target,
-    rel
+    rel,
+    type = 'button'
     } = Astro.props;
 
     const baseStyles = "inline-flex items-center px-6 py-3 border text-base font-medium rounded-md shadow-sm transition-colors duration-200";
@@ -35,7 +37,7 @@ interface Props {
     ) : (
     <button
         class:list={[baseStyles, variants[variant], className]}
-        type="button"
+        type={type}
     >
         <slot />
     </button>

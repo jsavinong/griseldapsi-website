@@ -6,13 +6,16 @@ import '../styles/global.css';
 interface Props {
   title: string;
   description?: string;
-}
+  }
 
-const { title, description = "Professional psychologist and author helping people live better lives" } = Astro.props;
----
+  const { title, description = "Professional psychologist and author helping people live better lives" } = Astro.props;
+  
+  const {currentLocale} = Astro;
+  console.log({currentLocale});
+  ---
 
-<!DOCTYPE html>
-<html lang="en">
+  <!DOCTYPE html>
+  <html lang={currentLocale}>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />

@@ -9,21 +9,21 @@ import Button from './ui/Button.astro';
     <div class="grid lg:grid-cols-2 gap-12 items-center">
         <div class="text-center lg:text-left">
         <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900">
-            <span class="block">Transform Your Life</span>
-            <span class="block text-primary-600">Through Understanding</span>
+            <span class="block">Transforma Tu Vida</span>
+            <span class="block text-primary-600">a Través de la Comprensión</span>
         </h1>
         <p class="mt-6 text-lg sm:text-xl text-gray-600 max-w-2xl">
-            Join Dr. Sarah Johnson on a journey of self-discovery and personal growth. Learn practical strategies for better mental health and well-being.
+            Únete a la Lic. Griselda García en un viaje de autodescubrimiento, crecimiento personal y en pareja. Aprende estrategias prácticas para mejorar tu salud mental y bienestar.
         </p>
         <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
             <Button href="/book">
-            Discover the Book
+            Descubre el Libro
             <svg class="ml-2 w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
                 <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
             </svg>
             </Button>
             <Button href="/about" variant="secondary">
-            About Dr. Johnson
+            Acerca de Lic. García
             </Button>
         </div>
         </div>
@@ -31,21 +31,23 @@ import Button from './ui/Button.astro';
         <div class="relative">
         <div class="relative z-10 transform hover:-translate-y-2 transition-transform duration-300">
             <div class="relative group">
-            <div class="absolute -inset-1 bg-gradient-to-r from-primary-500 to-primary-600 rounded-lg blur opacity-25 group-hover:opacity-75 transition duration-300"></div>
-            <img
-                src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80"
-                alt="Book Cover"
-                class="relative rounded-lg shadow-xl"
-            />
-            </div>
+                <div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+                    <model-viewer src="https://jsavinong.github.io/Lala-vanderia-App/Trivilidades_que_Afec_0913001515.glb"
+                    alt="Un modelo 3D"
+                    auto-rotate
+                    camera-controls
+                    style="width: 600px; height: 600px;">
+                    </model-viewer>
+                    </div>
+                    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
         </div>
-        <div class="absolute bottom-0 right-0 w-48 h-48 rounded-full overflow-hidden border-4 border-white shadow-lg">
+        <!-- <div class="absolute bottom-0 right-0 w-48 h-48 rounded-full overflow-hidden border-4 border-white shadow-lg">
             <img
             src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&h=400&q=80"
-            alt="Dr. Sarah Johnson"
+            alt="Lic. Griselda García"
             class="w-full h-full object-cover"
             />
-        </div>
+        </div> -->
         </div>
     </div>
     </div>

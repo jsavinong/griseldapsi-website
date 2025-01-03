@@ -1,0 +1,41 @@
+---
+const contactDetails = [
+    {
+    icon: "📍",
+    title: "Dirección",
+    details: ["Calle La Paz #2", "Santo Domingo, Herrera"]
+    },
+    {
+    icon: "📞",
+    title: "Teléfono",
+    details: ["(555) 123-4567"]
+    },
+    {
+    icon: "📧",
+    title: "Correo Electrónico",
+    details: ["g.garciaamz@gmail.com"]
+    },
+    {
+    icon: "⏰",
+    title: "Horas de trabajo",
+    details: ["Lunes - Viernes: 7am - 4pm", "Sábado: Por cita"]
+    }
+    ];
+    ---
+
+    <div>
+    <h2 class="text-2xl font-bold text-gray-900 mb-6">Ponte en contacto</h2>
+    <div class="space-y-6">
+    {contactDetails.map(item => (
+        <div class="flex items-start">
+        <span class="text-2xl mr-4">{item.icon}</span>
+        <div>
+            <h3 class="font-semibold text-gray-900">{item.title}</h3>
+            {item.details.map(detail => (
+            <p class="text-gray-600">{detail}</p>
+            ))}
+        </div>
+        </div>
+    ))}
+    </div>
+</div>
