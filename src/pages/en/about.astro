@@ -1,6 +1,7 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import { Image } from 'astro:assets';
+import myImage from '../../assets/DSC07028.jpg'; // Importa la imagen como un módulo
+import { Image } from 'astro:assets'; // Importa el componente Image de astro:assetsimport { Image } from '../../assets/DSC06970.jpg';
 ---
 
 <Layout title="Acerca de Lic. Griselda García - Psicóloga Profesional">
@@ -10,7 +11,7 @@ import { Image } from 'astro:assets';
         <div class="prose prose-lg max-w-none">
             <div class="mb-8">
                 <Image
-                    src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=800&h=600&q=80"
+                    src={ myImage }
                     alt="Lic. Griselda García"
                     width={800}
                     height={600}
