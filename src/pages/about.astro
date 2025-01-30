@@ -1,61 +1,47 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import { Image } from 'astro:assets';
+// import myImage from '../../assets/griseldaaboutsection.jpg'; // Importa la imagen como un módulo
+// import { Image } from 'astro:assets'; // Importa el componente Image de astro:assetsimport { Image } from '../../assets/DSC06970.jpg';
 ---
 
-<Layout title="About Dr. Sarah Johnson - Professional Psychologist">
+<Layout title="Acerca de Lic. Griselda García - Psicóloga Profesional">
     <section class="py-24 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <h1 class="text-4xl font-bold text-gray-900 mb-8">Acerca de la Lic. García</h1>
         
         <div class="prose prose-lg max-w-none">
-        <div class="mb-8">
-            <Image
-            src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=800&h=600&q=80"
-            alt="Dr. Sarah Johnson"
-            width={800}
-            height={600}
-            class="rounded-lg shadow-lg"
-            />
-        </div>
+            <div class="mb-8">
+                <img
+                    src="https://res.cloudinary.com/dwhbgia5f/image/upload/v1738204452/RM-DSC07028_od7i9u.jpg"
+                    alt="Lic. Griselda García"
+                    width="800"
+                    height="600"
+                    class="rounded-lg shadow-lg"
+                />
 
-        <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">Biografía</h2>
-<p>
-    Nace el 19 de marzo del año 1966 en Bacuí, La Vega. Es egresada de la Universidad Autónoma
-    de Santo Domingo, el 28 de octubre del 1993, con el título de Licenciada en Psicología. Técnico Especialista en 
-    “Aplicación de Técnicas de Modificación Conductual y Manejo Disciplinario”. Habilitación docente, diversos diplomados, 
-    y Máster en “Ciencias del Matrimonio y la Familia”, Pontificia Universidad Lateranense, Valencia.
-</p>
-<p>
-    Es maestra empírica, amante de la lectura y escritura, lo cual usa como un medio de expresión. 
-    Es de formación cristiana Católica. Junto a su esposo, ha trabajado desde hace más de 30 años 
-    en la formación de parejas en su comunidad, siendo coordinadores por 25 años. Actualmente son 
-    miembros asociados del Instituto Secular Voluntas Dei, desde su fundación en Herrera, “por voluntad de Dios”.
-</p>
-
-<h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">Experiencia Profesional</h2>
-<ul>
-    <li>Plan Internacional Santo Domingo</li>
-    <li>Patronato Nacional de Ciegos</li>
-    <li>Colegio San Gabriel de la Dolorosa</li>
-    <li>Psicóloga - orientadora del Minerd en el Centro de Estudios “La Hora de Dios” dirigido por las Religiosas Concepcionistas de la Enseñanza</li>
-</ul>
-
-<h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">Sobre el Libro</h2>
-<p>
-    “He titulado este libro <strong>TRIVIALIDADES QUE AFECTAN A LAS PAREJAS</strong>, debido a que por dificultades insignificantes, 
-    las parejas comienzan a alejarse, pequeñeces que si no son tomadas en cuenta, abren heridas y forman una cadena que puede separarles. 
-    También incluye algunas anécdotas que han acompañado mi familia, trivialidades que han ocurrido en nuestras vidas mientras se escriben estas páginas.”
-</p>
-<p>
-    Este sencillo libro va dirigido a las parejas de cualquier edad, que deseen conocerse con un carácter de seriedad y responsabilidad. 
-    Es de términos sencillos y fácil lectura, el producto de muchos años de trabajo con diferentes parejas, su investigación como profesional 
-    de la conducta humana y, lo más importante, sus vivencias del día a día. Es un producto de muchos; redactado con amor, respeto y seriedad, 
-    escrito por una mujer que cree en la pareja, en el matrimonio, en la familia, y que vive las dificultades de ser esposa, madre, empleada, hija, 
-    hermana, amiga, tía, y sobre todo, la responsabilidad de colaborar cristianamente junto a su esposo e hijos. 
-    “Hacen falta buenas familias, hacen falta hogares, hace falta amor.”
-</p>
-
-        </ul>
+            </div>
+    
+            <h2 class="text-3xl font-extrabold text-gray-900 mb-6 border-b-2 border-gray-300 pb-2">Biografía</h2>
+            <p class="text-lg text-gray-800 leading-relaxed">
+                Nace el 19 de marzo del año 1966 en Bacuí, La Vega. Es egresada de la Universidad Autónoma de Santo Domingo, 
+                el 28 de octubre del 1993, con el título de Licenciada en Psicología. Conferencista, escritora y profesional 
+                con una sólida preparación académica, que incluye Técnico en Rehabilitación de Ciegos, Técnico Especialista 
+                en “Aplicación de Técnicas de Modificación Conductual y Manejo Disciplinario”, Diplomado en Pastoral Educativa, 
+                Habilitación docente, Diplomado en Neurociencias, Diplomado en Trauma Complejo y Resiliencia, Curso Violencia 
+                Intrafamiliar y Género y un Máster en “Ciencias del Matrimonio y la Familia” impartida por la Pontificia Universidad 
+                Lateranense, Valencia.
+            </p>
+            <p class="text-lg text-gray-800 mt-4">
+                Es maestra empírica, amante de la lectura y escritura, lo cual usa como un medio de expresión. Es de formación cristiana 
+                Católica. Junto a su esposo, ha trabajado desde hace más de 30 años en la formación de parejas en su comunidad, siendo 
+                coordinadores por 25 años. Actualmente son miembros asociados del Instituto Secular Voluntas Dei, desde su fundación en Herrera, 
+                “por voluntad de Dios”.
+            </p>
+            <p class="text-lg text-gray-800 mt-4">
+                Ha laborado en diferentes instituciones: Plan Internacional Santo Domingo, Patronato Nacional de Ciegos, Colegio San Gabriel 
+                de la Dolorosa, y actualmente es Psicóloga-orientadora del Minerd en el Centro de Estudios “La Hora de Dios”, dirigido por las 
+                Religiosas Concepcionistas de la Enseñanza.
+            </p>
         </div>
     </section>
+
 </Layout>
