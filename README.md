@@ -1,48 +1,56 @@
-# Astro Starter Kit: Basics
+# Griseldapsi Website
+
+Sitio web oficial de la Lic. Griselda García, autora de “Trivialidades que afectan a las parejas”.
+
+## Descripción
+
+Este proyecto presenta información sobre el libro, recursos para parejas y opciones de compra. Está construido con [Astro](https://astro.build/) y utiliza TailwindCSS para el diseño.
+
+![Hero section del website de Griselda García](https://res.cloudinary.com/dwhbgia5f/image/upload/v1759168617/herosection_trivialidades_yx8kn2.png)
+
+*Hero section del website de Griselda García (griseldapsi.com)*
+
+## Características
+
+- Detalles del libro y biografía de la autora
+- Sección de compra directa en Amazon
+- Diseño responsivo y moderno
+
+## Instalación
+
+1. Clona el repositorio:
+   ```sh
+   git clone https://github.com/jsavinong/griseldapsi-website.git
+   cd griseldapsi-website
+   ```
+2. Instala las dependencias:
+   ```sh
+   npm install
+   ```
+   *(O usa `pnpm install` si prefieres pnpm)*
+
+## Uso en desarrollo
 
 ```sh
-npm create astro@latest -- --template basics
+npm run dev
+```
+Abre [http://localhost:4321](http://localhost:4321) para ver el sitio localmente.
+
+## Construcción para producción
+
+```sh
+npm run build
+npm run preview
 ```
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+## Despliegue
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Puedes desplegar el sitio en plataformas como Vercel, Netlify o tu propio servidor.
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+## Licencia
 
-## 🚀 Project Structure
+Este proyecto está bajo la licencia MIT.
 
-Inside of your Astro project, you'll see the following folders and files:
+---
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
-
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+*Desarrollado por José Saviñón.*
