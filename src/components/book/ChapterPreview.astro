@@ -1,33 +1,37 @@
 ---
+// SUGERENCIA: Reordenar los capítulos para que tengan un orden lógico
 const chapters = [
-    {
+  {
     number: 1,
     title: "Somos diferentes",
     description: "La familia moldea la personalidad y la autoestima, influyendo en cómo nos relacionamos en el noviazgo y la vida adulta."
-    },
-    {
+  },
+  {
     number: 2,
     title: "Economía y matrimonio",
     description: "La planificación económica y la comunicación son claves para un matrimonio estable y sin conflictos financieros."
-    },
-    {
+  },
+  {
     number: 3,
     title: "La primera vez",
     description: "Las 'primeras veces' deben basarse en amor y responsabilidad, evitando decisiones impulsivas que dejen secuelas emocionales."
-    }
-    ];
+  }
+];
 
-    ---
+---
 
-    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-16">
-    <h2 class="text-3xl font-bold text-gray-900 mb-8">¿Qué encontrarás?</h2>
+<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-16">
+    <div class="text-center">
+        <h2 class="text-3xl font-bold text-gray-900 mb-8">¿Qué encontrarás en el libro?</h2>
+    </div>
     <div class="grid md:grid-cols-3 gap-8">
         {chapters.map(chapter => (
-        <div class="bg-white p-6 rounded-lg shadow-md">
-            <div class="text-primary-600 font-semibold mb-2">Capítulo {chapter.number}</div>
-            <h3 class="text-xl font-bold text-gray-900 mb-3">{chapter.title}</h3>
-            <p class="text-gray-600">{chapter.description}</p>
-        </div>
+            // SUGERENCIA: Añadir borde y efectos hover para un diseño más dinámico
+            <div class="bg-white p-6 rounded-lg shadow-md border border-gray-200 transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
+                <div class="text-green-600 font-semibold mb-2">Capítulo {chapter.number}</div>
+                <h3 class="text-xl font-bold text-gray-900 mb-3">{chapter.title}</h3>
+                <p class="text-gray-600">{chapter.description}</p>
+            </div>
         ))}
     </div>
-    </section>
+</section>
