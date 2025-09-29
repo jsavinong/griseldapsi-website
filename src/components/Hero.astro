@@ -51,10 +51,15 @@ import Button from './ui/Button.astro';
                         <div style="display: flex; justify-content: center; align-items: center; height: auto;">
                             <model-viewer
                                 src="https://jsavinong.github.io/Lala-vanderia-App/libro_Trivialidades.glb"
-                                alt="Un modelo 3D del libro"
+                                alt="Un modelo 3D del libro Trivialidades que Afectan a las Parejas"
                                 auto-rotate
                                 camera-controls
-                                style="width: 100%; height: 300px; max-width: 600px; margin: 0 auto;">
+                                shadow-intensity="1"
+                                exposure="1.2"
+                                camera-orbit="30deg 75deg 90%"
+                                
+                                class="w-full"
+                                style="height: 500px; max-height: 80vh; background-color: transparent; --poster-color:transparent">
                             </model-viewer>
                         </div>
                     </div>
@@ -71,22 +76,34 @@ import Button from './ui/Button.astro';
 
     @keyframes subtle-float {
         0%, 100% {
-            transform: translateY(0);
+            transform: translateY(0) rotateY(-5deg); /* Añade una ligera rotación para un efecto más dinámico */
         }
         50% {
-            transform: translateY(-10px);
+            transform: translateY(-15px) rotateY(5deg); /* Flota más y cambia de rotación */
         }
     }
 
-    model-viewer {
-        --poster-color: transparent;
-        background-color: transparent;
-        
+    .animation-float {
+        animation: subtle-float 8s ease-in-out infinite; /* Aumenta la duración para que sea más sutil */
     }
 
+    
+
+    /* Ajustes para pantallas medianas/grandes para un mejor impacto */
+    @media (min-width: 768px) {
+        model-viewer {
+            height: 600px; /* Aún más alto en pantallas grandes */
+            max-height: 70vh; /* Ajuste para evitar que sea demasiado grande */
+        }
+    }
+
+    /* Ajustes específicos para móviles si se desea una vista diferente */
     @media (max-width: 768px) {
         model-viewer {
-            --camera-orbit: "0deg 75deg 105%";
+            height: 350px; /* Un tamaño razonable para móviles */
+            /* Puedes ajustar camera-orbit para una vista más frontal en móvil */
+            /* --camera-orbit: "0deg 75deg 105%"; */
+            
         }
     }
 </style>
